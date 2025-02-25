@@ -1,0 +1,36 @@
+<div class="table-container">
+    <div class="header-container">
+        <input type="checkbox" id="select-all" [checked]="selectAll" [indeterminate]="indeterminate"
+            (change)="toggleSelectAll()">
+        <label>{{ selectedAllLabel }}</label>
+        <a (click)="exportFiles()">
+            <span>
+                <mat-icon>download</mat-icon>
+            </span>
+            <span class="downloadLabel"> Download Selected</span>
+        </a>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th *ngFor="let header of headers;">{{header}}</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let data of tabularData;" [class.selected]="data.selected">
+                <td>
+                    <input type="checkbox" [(ngModel)]="data.selected" (change)="updateSelection()">
+                </td>
+                <td>{{data.name}}</td>
+                <td>{{data.device}}</td>
+                <td>{{data.path}}</td>
+                <td>
+                    <span *ngIf="data.status === 'available'" class="status-indicator"></span>
+                    <span>{{ data.status.charAt(0).toUpperCase() + data.status.slice(1) }}</span>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<app-export *ngIf="showExport" [exportData]="exportData" (closeEvent)="showExport=false"></app-export>

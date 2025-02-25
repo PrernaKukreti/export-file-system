@@ -1,0 +1,15 @@
+<div class="backdrop" *ngIf="isVisible"></div>
+<div class="alert-box" *ngIf="isVisible">
+    <span>
+        <mat-icon class="close-icon" (click)="close()">close</mat-icon>
+    </span>
+    <p class="disclaimer" *ngIf="exportData.length"><i>**Note: Selected and Available files are ready to download</i></p>
+    <ol *ngIf="exportData.length">
+        <li *ngFor="let data of exportData">
+            <span *ngFor="let key of getKeys(data)">
+                <strong>{{ key }}:</strong> {{ data[key] }} &nbsp;
+            </span>
+        </li>
+    </ol>
+    <p class="not-found" *ngIf="!exportData.length">No data found!</p>
+</div>
