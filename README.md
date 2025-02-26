@@ -10,7 +10,7 @@ This project was generated using [Angular CLI](https://github.com/angular/angula
 ## Pre-requisites  
 Before running this project, ensure you have the following installed:
 
-- **Node.js - latest version( Recommended : v20.18.3) ** 
+- **Node.js - latest version( Recommended : v20.18.3)** 
   - Check version:
     ```bash
       node -v
@@ -20,7 +20,9 @@ Before running this project, ensure you have the following installed:
      ```
     
 - **Angular CLI**
-   npm install -g @angular/cli
+   ```bash
+     npm install -g @angular/cli
+     ```
   - Check version:  
     ```bash
      ng version
