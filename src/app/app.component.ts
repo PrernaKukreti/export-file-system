@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import fileData from '../assets/data/mock-file-data.json';
+import { MOCK_FILE_DATA } from '../assets/data/mock-file-data.js';
 import { fileDetail } from './models/common';
 
 @Component({
@@ -16,6 +16,6 @@ export class AppComponent implements OnInit {
    * Component loads
    */
   ngOnInit() {
-    this.fileDetails = fileData.data;
+    this.fileDetails = MOCK_FILE_DATA;
   }
 }

@@ -1,4 +1,4 @@
-@import "../../../src/styles/variables.scss";
+@use "../../../src/styles/variables.scss" as *;
 
 .header-container {
   font-family: "Roboto", sans-serif;
