@@ -69,7 +69,6 @@ For more information on using the Angular CLI, including detailed command refere
 
 ## Future functionalities 
 - Implementation of the export functionality via excel sheet.
-- Disabling the selection for the files with status other than `available` to avoid disclaimer
 - Service implementation to get the actual file details
 
 
