@@ -1,6 +1,6 @@
 # ExportFileSystem
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.8.
+This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.8. This application allows user to export the selected files.
 - Re-usable components like export and dashboard. Export popup is very generic component, can be used as it is 
 - Used scss varaibles to easier maintainence and re-usability
 - Unit test cases with 100% coverage
