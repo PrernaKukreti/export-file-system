@@ -20,11 +20,10 @@ Before running this project, ensure you have the following installed:
     ```bash
       npm -v
      ```
-    
 - **Angular CLI**
- - Install:
-   ```bash
-     npm install -g @angular/cli
+  - Install:
+    ```bash
+       npm install -g @angular/cli
      ```
   - Check version:  
     ```bash
