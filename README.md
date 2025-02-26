@@ -7,10 +7,10 @@ This project was generated using [Angular CLI](https://github.com/angular/angula
 - Added disclaimer - only available files can be downloaded
 
 ------------------------------------------------------------------------------------------------------------------------------
-## Prerequisites  
+## Pre-requisites  
 Before running this project, ensure you have the following installed:
 
-- **Node.js**
+- **Node.js - latest version( Recommended : v20.18.3) ** 
   - Check version:
     ```bash
       node -v
