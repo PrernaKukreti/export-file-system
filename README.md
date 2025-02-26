@@ -3,7 +3,7 @@
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.8. This application allows user to export the selected files.
 - Re-usable components such as Export and Dashboard. The Export alert popup is a highly generic component that can be used as-is.
 - SCSS variables are used for easier maintenance and reusability.
-- Unit test cases ensure 100% coverage.
+- Unit test cases with 100% coverage.
 - Added disclaimer - only available files can be downloaded
 
 ------------------------------------------------------------------------------------------------------------------------------
@@ -11,6 +11,7 @@ This project was generated using [Angular CLI](https://github.com/angular/angula
 Before running this project, ensure you have the following installed:
 
 - **Node.js - latest version( Recommended : v20.18.3)** 
+  - Install: https://nodejs.org/en/download
   - Check version:
     ```bash
       node -v
@@ -20,6 +21,7 @@ Before running this project, ensure you have the following installed:
      ```
     
 - **Angular CLI**
+ - Install:
    ```bash
      npm install -g @angular/cli
      ```
@@ -31,12 +33,12 @@ Before running this project, ensure you have the following installed:
 ## Run the web application   
 - git clone https://github.com/PrernaKukreti/export-file-system.git
 - cd export-file-system
-
-To start a local development server, run:
-
+- To install dependencies 
 ```bash
 npm install
-
+```
+- To start a local development server, run:
+```bash
 ng serve
 ```
 
