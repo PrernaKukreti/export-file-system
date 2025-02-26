@@ -2,7 +2,7 @@ import { TestBed } from '@angular/core/testing';
 import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-import fileData from '../assets/data/mock-file-data.json';
+import { MOCK_FILE_DATA } from '../assets/data/mock-file-data.js';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
@@ -29,6 +29,6 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
     app.ngOnInit();
-    expect(app.fileDetails).toEqual(fileData.data);
+    expect(app.fileDetails).toEqual(MOCK_FILE_DATA);
   });
 });
