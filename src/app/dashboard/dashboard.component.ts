@@ -5,6 +5,10 @@ import {
   selectedFileDetail,
 } from '../models/common';
 
+import {
+  STATUS
+} from '../constants/constants';
+
 @Component({
   selector: 'app-dashboard',
   standalone: false,
@@ -33,11 +37,12 @@ export class DashboardComponent implements OnInit {
     }));
   }
 
+
   /**
    * Filter the selected files
    */
   selectedCount(): number {
-    return this.tabularData.filter((data) => data.selected).length;
+    return this.tabularData.filter((data) => data.selected && data.status === STATUS.AVAILABLE).length;
   }
 
   /**
@@ -50,7 +55,7 @@ export class DashboardComponent implements OnInit {
     this.selectedAllLabel = selectedCount
       ? `Selected ${selectedCount}`
       : `None Selected`;
-    const totalAvailable = this.tabularData.length;
+    const totalAvailable = this.tabularData.filter(data => data.status === STATUS.AVAILABLE).length;
     this.selectAll = selectedCount === totalAvailable;
     this.indeterminate = selectedCount > 0 && selectedCount < totalAvailable;
   }
@@ -61,7 +66,7 @@ export class DashboardComponent implements OnInit {
    */
   toggleSelectAll(): void {
     const newState = !this.selectAll;
-    this.tabularData.forEach((data) => (data.selected = newState));
+    this.tabularData.forEach((data) => (data.selected = newState && data.status === STATUS.AVAILABLE));
     this.updateSelection();
   }
 
@@ -71,7 +76,7 @@ export class DashboardComponent implements OnInit {
    */
   exportFiles(): void {
     this.exportData = this.tabularData
-      .filter((data) => data.selected && data.status === 'available')
+      .filter((data) => data.selected && data.status === STATUS.AVAILABLE)
       .map((data) => ({
         Device: data.device,
         Path: data.path,

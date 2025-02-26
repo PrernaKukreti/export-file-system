@@ -21,7 +21,8 @@
         <tbody>
             <tr *ngFor="let data of tabularData;" [class.selected]="data.selected">
                 <td>
-                    <input type="checkbox" [(ngModel)]="data.selected" (change)="updateSelection()">
+                    <input type="checkbox" [(ngModel)]="data.selected" [disabled]="data.status !== 'available'" 
+                        (change)="updateSelection()">
                 </td>
                 <td>{{data.name}}</td>
                 <td>{{data.device}}</td>
