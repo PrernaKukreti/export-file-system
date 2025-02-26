@@ -1,3 +1,5 @@
+@use "../styles/variables.scss" as *;
+
 .disclaimer {
-  color: gray;
+  color: $subtle-heading-color;
 }
