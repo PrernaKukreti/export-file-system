@@ -1,9 +1,9 @@
 # ExportFileSystem
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.8. This application allows user to export the selected files.
-- Re-usable components like export and dashboard. Export popup is very generic component, can be used as it is 
-- Used scss varaibles to easier maintainence and re-usability
-- Unit test cases with 100% coverage
+- Re-usable components such as Export and Dashboard. The Export popup is a highly generic component that can be used as-is.
+- SCSS variables are used for easier maintenance and reusability.
+- Unit test cases ensure 100% coverage.
 
 ------------------------------------------------------------------------------------------------------------------------------
 ## Prerequisites  
@@ -25,11 +25,8 @@ Before running this project, ensure you have the following installed:
      ng version
      ```
 
-
-## How to run the application
-
 ## Run the web application   
-- git clone <git.url>
+- git clone https://github.com/PrernaKukreti/export-file-system.git
 - cd export-file-system
 
 To start a local development server, run:
@@ -40,9 +37,7 @@ ng serve
 
 Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
-```
-
-To build the project run:
+## To build the project
 
 ```bash
 ng build
@@ -64,3 +59,13 @@ ng test --code-coverage
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+## Future functionalities 
+- Implementation of the export functionality via excel sheet.
+- Disabling the selection for the files with status other than `available` to avoid disclaimer
+- Service implementation to get the actual file details
+
+
+Author
+👤 Prerna Kukreti
+📧 Email: kukretiprerna05@gmail.com
