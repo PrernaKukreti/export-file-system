@@ -4,6 +4,7 @@ This project was generated using [Angular CLI](https://github.com/angular/angula
 - Re-usable components such as Export and Dashboard. The Export alert popup is a highly generic component that can be used as-is.
 - SCSS variables are used for easier maintenance and reusability.
 - Unit test cases with 100% coverage.
+- Utilizing angular directive for more efficient and optimized code.
 - Added disclaimer - only available files can be downloaded
 
 ------------------------------------------------------------------------------------------------------------------------------
