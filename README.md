@@ -33,6 +33,8 @@ Before running this project, ensure you have the following installed:
 To start a local development server, run:
 
 ```bash
+npm install
+
 ng serve
 ```
 
