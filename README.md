@@ -73,6 +73,10 @@ For more information on using the Angular CLI, including detailed command refere
 - Service implementation to get the actual file details
 
 
-Author
+
+
+
+
+## Author
 👤 Prerna Kukreti
 📧 Email: kukretiprerna05@gmail.com
