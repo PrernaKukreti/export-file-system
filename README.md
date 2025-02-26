@@ -14,18 +14,23 @@ Before running this project, ensure you have the following installed:
     ```bash
       node -v
      ```
+    ```bash
+      npm -v
+     ```
     
 - **Angular CLI**
    npm install -g @angular/cli
   - Check version:  
-    ng version
+    ```bash
+     ng version
+     ```
 
 
 ## How to run the application
 
 ## Run the web application   
-- git clone https://github.com/your-repo/file-table-project.git
-- cd file-table-project
+- git clone <git.url>
+- cd export-file-system
 
 To start a local development server, run:
 
@@ -36,8 +41,6 @@ ng serve
 Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
 ```
-
-## Building
 
 To build the project run:
 
