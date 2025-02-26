@@ -3,7 +3,8 @@
     <span>
         <mat-icon class="close-icon" (click)="close()">close</mat-icon>
     </span>
-    <p class="disclaimer" *ngIf="exportData.length"><i>**Note: Selected and Available files are ready to download</i></p>
+    <p class="disclaimer" *ngIf="exportData.length"><i>**Note: Selected and Available files are ready to download</i>
+    </p>
     <ol *ngIf="exportData.length">
         <li *ngFor="let data of exportData">
             <span *ngFor="let key of getKeys(data)">

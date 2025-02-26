@@ -1,83 +1,88 @@
-.header-container {
-    font-family: "Roboto", sans-serif;
-    padding: 14px 10px;
-  }
+@import "../../../src/styles/variables.scss";
 
-  label{
-    padding: 42px;
-    font-size: 25px;
-    font-weight: 100;
-  }
-  
-  .downloadLabel{
-      padding: 5px;
-      font-size: 25px;
-      font-weight: 100;
-    }
-  
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    font-family: "Arial", sans-serif;
-  }
-  
-  .table-container {
-    border-bottom: 1px solid #ddd;
-    border-radius: 5px;
-    overflow: hidden;
-  }
-  
-  th {
-    padding: 10px;
-    font-weight: 100;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
-    border-top: 1px solid #ddd;
-  }
-  
-  td {
-    padding: 10px;
-    font-weight: 100;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
-    font-size: 12px;
-  }
-  
-  tr.selected {
-      background-color: #eeeeee;
-    }
-  
-    /* Hover effect */
-  tr:hover {
-      background-color: #f5f5f5;
-      cursor: pointer;
-    }
-  
-    /* Green status indicator for available status */
-  .status-indicator {
-      display: inline-block;
-      width: 15px;
-      height: 15px;
-      background-color: #86ce3c;
-      border-radius: 50%;
-    }
-  
-    
-    /* Adjust alignment for scheduled status */
-    .status-scheduled {
-      margin-left: 18px; /* Adjust to align with available */
-    }
-    .status-available{
-      margin-left: 5px; /* Adjust to align with available */
-    }
-  
-    input{
-      height: 20px;
-      width: 18px;
-    }
-    a{
-      cursor: pointer;
-    }
-    
-    
-  
+.header-container {
+  font-family: "Roboto", sans-serif;
+  padding: 14px 10px;
+}
+
+label {
+  padding: 42px;
+  font-size: 25px;
+  font-weight: 100;
+}
+
+.downloadLabel {
+  padding: 5px;
+  font-size: 25px;
+  font-weight: 100;
+}
+
+input {
+  height: 20px;
+  width: 18px;
+}
+a {
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: "Arial", sans-serif;
+}
+
+.table-container {
+  border-bottom: 1px solid $row-border-color;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+th {
+  padding: 10px;
+  font-weight: 100;
+  text-align: left;
+  border-bottom: 1px solid $row-border-color;
+  border-top: 1px solid $row-border-color;
+}
+
+td {
+  padding: 10px;
+  font-weight: 100;
+  text-align: left;
+  border-bottom: 1px solid $row-border-color;
+  font-size: 12px;
+}
+
+tr.selected {
+  background-color: #eeeeee;
+}
+
+tr:hover {
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+
+.status-indicator {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-color: #86ce3c;
+  border-radius: 50%;
+}
+
+.status-scheduled {
+  margin-left: 18px;
+}
+.status-available {
+  margin-left: 5px;
+}
+
+.status-with-icon {
+  position: relative;
+  left: 14px;
+}
+
+.status-without-icon {
+  position: relative;
+  left: 28px;
+}

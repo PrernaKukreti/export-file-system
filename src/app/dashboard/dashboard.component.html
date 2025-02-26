@@ -1,6 +1,6 @@
 <div class="table-container">
     <div class="header-container">
-        <input type="checkbox" id="select-all" [checked]="selectAll" [indeterminate]="indeterminate"
+        <input id="select-all" type="checkbox" [checked]="selectAll" [indeterminate]="indeterminate"
             (change)="toggleSelectAll()">
         <label>{{ selectedAllLabel }}</label>
         <a (click)="exportFiles()">
@@ -14,7 +14,8 @@
         <thead>
             <tr>
                 <th></th>
-                <th *ngFor="let header of headers;">{{header}}</th>
+                <th [ngClass]="{'status-without-icon': header === 'Status'}" *ngFor="let header of headers;">{{header}}
+                </th>
             </tr>
         </thead>
         <tbody>
@@ -27,7 +28,9 @@
                 <td>{{data.path}}</td>
                 <td>
                     <span *ngIf="data.status === 'available'" class="status-indicator"></span>
-                    <span>{{ data.status.charAt(0).toUpperCase() + data.status.slice(1) }}</span>
+                    <span
+                        [ngClass]="{'status-with-icon': data.status === 'available', 'status-without-icon': data.status !== 'available'}">{{
+                        data.status.charAt(0).toUpperCase() + data.status.slice(1) }}</span>
                 </td>
             </tr>
         </tbody>

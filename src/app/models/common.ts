@@ -12,3 +12,8 @@ export interface selectedFileDetail{
     status: string,
     selected: boolean
 }
+
+export interface exportFileData{
+    Device: string,
+    Path: string,
+}
