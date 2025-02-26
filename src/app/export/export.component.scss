@@ -1,3 +1,5 @@
+@use "../../../src/styles/variables.scss" as *;
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -13,7 +15,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: white;
+  background: $popup-background-color;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
@@ -28,7 +30,7 @@
 }
 
 .disclaimer {
-  color: gray;
+  color: $subtle-heading-color;
 }
 
 ol {
@@ -39,7 +41,7 @@ ol {
 li {
   margin: 10px 0;
   font-size: 16px;
-  color: #333;
+  color: $list-text-color;
 }
 .not-found {
   padding: 40px;
