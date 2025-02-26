@@ -5,15 +5,25 @@ This project was generated using [Angular CLI](https://github.com/angular/angula
 - Used scss varaibles to easier maintainence and re-usability
 - Unit test cases with 100% coverage
 
+------------------------------------------------------------------------------------------------------------------------------
+## Prerequisites  
+Before running this project, ensure you have the following installed:
+
+- **Node.js**
+  - Check version:  
+    node -v
+    npm -v
+    
+- **Angular CLI**
+   npm install -g @angular/cli
+  - Check version:  
+    ng version
+
+
 ## How to run the application
 
-
-
 To start a local development server, run:
-
-```bash
 ng serve
-```
 
 Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
