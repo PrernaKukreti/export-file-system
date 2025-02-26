@@ -10,9 +10,10 @@ This project was generated using [Angular CLI](https://github.com/angular/angula
 Before running this project, ensure you have the following installed:
 
 - **Node.js**
-  - Check version:  
-    node -v
-    npm -v
+  - Check version:
+    ```bash
+      node -v
+     ```
     
 - **Angular CLI**
    npm install -g @angular/cli
@@ -22,8 +23,15 @@ Before running this project, ensure you have the following installed:
 
 ## How to run the application
 
+## Run the web application   
+- git clone https://github.com/your-repo/file-table-project.git
+- cd file-table-project
+
 To start a local development server, run:
+
+```bash
 ng serve
+```
 
 Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
@@ -46,9 +54,9 @@ To execute unit tests with the [Karma](https://karma-runner.github.io) test runn
 ```bash
 ng test
 ```
-
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+```bash
+ng test --code-coverage
+```
 
 ## Additional Resources
 
